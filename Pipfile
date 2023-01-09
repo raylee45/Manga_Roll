@@ -12,6 +12,7 @@ python-dotenv = "*"
 psycopg2 = "*"
 django-cloudinary-storage = "*"
 django-bootstrap-modal-forms = "*"
+Pillow = "*"
 
 [requires]
 python_version = "3.6.5"
