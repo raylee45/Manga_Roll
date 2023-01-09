@@ -8,8 +8,8 @@ config = dotenv_values('.env')
 print(config, '<><><><><><><><><><><><><><>><><><><><><><><>')
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = Path(__file__).resolve().parent
-
+BASE_DIR = os.path.dirname(os.dirname(__file__))
+print(BASE_DIR)
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
@@ -122,7 +122,7 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, '/mangaRoll_app/static')
+    os.path.join(BASE_DIR, 'mangaRoll_app/static')
 ]
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
