@@ -78,10 +78,6 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'manga-roll',
-        'PORT': '5432',
-        'USER': 'jqlfsjdnszadvy',
-        'PASSWORD': '872ec2316c660b46a9e3387eb87b315e8e1b3c00c2c5a7c11c621f002ae0fcc8',
-        'HOST': 'ec2-107-22-122-106.compute-1.amazonaws.com'
     }
 }
 
