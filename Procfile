@@ -1,2 +1,2 @@
 web: gunicorn mangaRoll.wsgi
-release: python manage.py migrate
+release: python3 manage.py migrate

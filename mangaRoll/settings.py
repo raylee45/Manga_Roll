@@ -77,7 +77,7 @@ WSGI_APPLICATION = 'mangaRoll.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'mangaroll',
+        'NAME': 'manga-roll',
         'PORT': '5432',
         'USER': 'jqlfsjdnszadvy',
         'PASSWORD': '872ec2316c660b46a9e3387eb87b315e8e1b3c00c2c5a7c11c621f002ae0fcc8',
