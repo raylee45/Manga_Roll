@@ -2,7 +2,7 @@ import os
 from os import environ
 from dotenv import load_dotenv, dotenv_values
 from pathlib import Path
-import cloudinary_storage
+import dj_database_url
 
 config = dotenv_values('.env')
 print(config, '<><><><><><><><><><><><><><>><><><><><><><><>')
@@ -22,7 +22,7 @@ print('secret key = ', SECRET_KEY)
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['0.0.0.0', 'localhost', '127.0.0.1', 'manga-roll.herokuapp.com']
 
 
 # Application definition
@@ -73,13 +73,18 @@ WSGI_APPLICATION = 'mangaRoll.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'manga-roll',
+        'USER': os.environ.get('PG_USER'),
+        'PASSWORD': os.environ.get('PG_PASSWORD'),
     }
 }
 
+# db_from_env = dj_database_url.config(conn_max_age=600)
+# DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/4.1/ref/settings/#auth-password-validators
