@@ -11,6 +11,7 @@ dj-database-url = "*"
 python-dotenv = "*"
 psycopg2 = "*"
 django-cloudinary-storage = "*"
+cloudinary-storage = "*"
 django-bootstrap-modal-forms = "*"
 Pillow = "*"
 
