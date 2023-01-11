@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'mangaRoll_app',
     'bootstrap_modal_forms',
     'cloudinary',
-    'cloudinary_storage'
 ]
 
 MIDDLEWARE = [
