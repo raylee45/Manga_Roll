@@ -77,9 +77,7 @@ WSGI_APPLICATION = 'mangaRoll.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'manga-roll',
-        'USER': os.environ.get('PG_USER'),
-        'PASSWORD': os.environ.get('PG_PASSWORD'),
+        'NAME': 'mangaroll',
     }
 }
 
