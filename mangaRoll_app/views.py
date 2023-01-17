@@ -86,7 +86,6 @@ def change_password(request):
             pass
     return render(request, "change_password.html")
 
-@login_required(login_url = '/manger_login')
 def manger_registration(request):
     if request.method == 'POST':
         username = request.POST['username']
