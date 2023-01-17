@@ -1,5 +1,5 @@
 # Manga_Roll
-Mangaroll is an application that allows users to upload their favorite manga onto their profile.
+Mangaroll is an application that allows users to upload their favorite manga onto the website and share with other users.
 
 ## Technologies Used
 - Python
